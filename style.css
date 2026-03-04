@@ -1,0 +1,147 @@
+/* Sayfa arka planı - Instagram rengi */
+body {
+  background-color: #fafafa !important;
+  padding-top: 54px; /* Navbar sabit, içerik birleşmemesi için */
+}
+
+/* Navbar: yukarı sabit, scroll'da hep görünür */
+.instagram-navbar {
+  height: 54px !important;
+  background-color: #fff !important;
+}
+
+/* Logo: soldan 192px margin */
+.logo {
+  margin-left: 192px;
+}
+
+/* Arama: d-flex ile ortalı, soldan 5 birim margin */
+.search-wrapper {
+  flex: 1;
+  max-width: 268px;
+  margin-left: 5rem; /* 5 birim */
+}
+
+.instagram-search {
+  background-color: #efefef;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px 10px 36px;
+}
+
+/* ::placeholder: arama simgesi (assets), tekrar etmemesi */
+::placeholder {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  background-image: url("assets/search-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 40%;
+  background-size: 6%;
+}
+
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-color: #fafafa;
+}
+
+.instagram-search::placeholder {
+  color: gray;
+}
+
+/* Sağ menü: soldan 5 birim, üstten 2 birim margin */
+.menu-right {
+  margin-left: 5rem;
+  margin-top: 0.5rem; /* 2 birim */
+}
+
+/* İçerik alanı: offset 4 ve üstten 2 birim (HTML'de offset-md-4 mt-2) */
+
+/* middlearea: ödevde istenen maksimum yükseklik 200px (!important) */
+.middlearea {
+  max-height: 200px !important;
+  overflow-y: auto;
+}
+
+/* Hikayeler: isimler resimlerin altına (flex column + align center) */
+.story-item {
+  flex-shrink: 0;
+}
+
+.storyphoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 39, 82);
+  margin-right: 7px;
+}
+
+.storytext {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.stories-container {
+  max-height: none;
+}
+
+/* İçerik kısmında üç nokta sağda (card header'da justify-content-between ile hallettik) */
+
+/* Beğenme, yorum, paylaşma: border olmamalı */
+.action-bar a,
+.action-bar .btn {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Card header ve card footer beyaz */
+.instagram-card .card-header,
+.instagram-card .card-footer {
+  background-color: #fff !important;
+}
+
+.postuserfont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+/* Yorum paylaş metni sağa (HTML'de text-end) */
+
+/* Sağ panel: sticky + beyaz, kenarlık yok */
+.stickysidebar {
+  position: sticky;
+  top: 70px;
+  height: fit-content;
+}
+
+.rightpanel {
+  background-color: #fff;
+  border: none;
+  padding-left: 1rem;
+}
+
+.rightpanellinks {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanel-footer {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.rightpanel-footer .rightpanellinks {
+  color: #c7c7c7;
+}
+
+/* Tümünü gör ve Takip et: HTML'de justify-content-between ve ms-auto ile sağa */
