@@ -1,4 +1,4 @@
-# Ödev 2: Bootstrap ile Instagram Clone
+ Bootstrap ile Instagram Clone
 
 Bootstrap ve CSS ile Instagram benzeri bir arayüz clone'u.
 
